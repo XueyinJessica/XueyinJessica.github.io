@@ -1,0 +1,273 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  repeat: none;
+  background-size: 100%;
+  position: relative;
+}
+.bg-1 {
+  background-color: #3C3C3C;
+  opacity: .9;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+body {
+  background-color: #ddd;
+}
+
+body, main, aside, footer {
+  margin-top: 50px;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
+
+/*HEADER*/
+
+header, .navbar-default {
+  background-color: #ddd;
+}
+
+.navbar-default {
+  border-color: none !important;
+}
+
+.navbar-fixed-top {
+  border-width: 0;
+}
+
+#brand, .navbar-default .navbar-nav>li>a, header h1, .arrow-down {
+  color: #095057;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #095057;
+}
+
+header nav a:after, .navbar-header a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0%;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+header nav a:hover:after, .navbar-header a:hover:after {
+	width: 100%;
+	background: #D38947;
+}
+
+.welcome {
+  padding: 200px;
+  background: center center no-repeat fixed;
+  background-size: cover;
+}
+
+.upAndDown {
+  transition: color 0.3s linear;
+}
+
+.upAndDown:hover {
+  color: #D38947;
+}
+
+.arrow-down a {
+  color: #095057;
+}
+
+.arrow-down a:hover {
+  transition: color 0.3s linear;
+  color: #D38947;
+}
+
+/*MAIN*/
+
+main {
+  background-color: #ddd;
+}
+
+main h2 {
+  padding: 30px 0;
+  color: #D38947;
+  position: relative;
+  text-align: center;
+}
+
+
+main .container {
+  padding-bottom: 40px;
+}
+
+.thumbnail {
+    position:relative;
+    overflow:hidden;
+}
+ 
+.caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #D38947;
+    width: 100%;
+    height: 100%;
+    padding-top: 2%;
+    opacity: 0;
+    text-align: center;
+    color: #fff !important;
+    z-index: 2;
+}
+
+.thumbnail .caption {
+    padding: 25% 0;
+}
+
+/*ASIDE*/
+
+aside {
+  background-color:  #A7D2CB;;
+  padding: 200px 0 200px 0;
+}
+
+aside h3 {
+  display: inline-block;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #ddd;
+  color: #095057;
+  margin-bottom: 30px;
+}
+footer .social {
+  margin: 80px 0;
+}
+
+footer h4 {
+  margin-bottom: 40px;
+}
+
+footer a {
+  color: #095057;
+  transition: color 0.3s linear;
+  margin-right: 20px;
+}
+
+footer a:hover {
+  color: #D38947;
+}
+
+footer ul, footer small {
+  display: inline;
+}
+
+footer small {
+  margin: 5px 20px;
+  font-size: 0.7em;
+}
+
+.list-inline>li {
+  margin-top: 20px;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 990px) {
+  .thumbnail .caption {
+    padding: 20% 0;
+  }
+  
+  .profile-picture.pull-right {
+    float: none !important;
+    margin: 40px auto 0 auto;
+  }
+  
+  .description {
+    text-align: center;
+    color: #A7D2CB;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .navbar-default .navbar-collapse {
+    border: none;
+    text-align: center;
+  }
+  
+  .navbar-default .navbar-collapse>li>a {
+    display: inline-block;
+    clear: both;
+  }
+  
+  .thumbnail .caption {
+    padding: 12% 0;
+  }
+  
+  .navbar-default .navbar-toggle {
+    border: 1px solid #095057;
+  }
+  
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #095057;
+  }
+  
+  header nav a:hover:after, .navbar-header a:hover:after {
+	width: min-content;
+	background: #D38947;
+}
+  
+}
+
+@media screen and (max-width: 660px) {
+  .welcome h1 {
+    font-size: 4em;
+  }
+}
+
+
+
+
+h_title {
+  color: #A7D2CB;
+  font-size: 150px;
+  font-family: 'Ruthie', cursive; monospace;
+}
+
+
+.subtitle {
+  color: #C98474;
+  font-family:'Cinzel Decorative', cursive; monospace;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+
+
+p-1 {
+  color: #3C3C3C;
+
+  font-family: 'Josefin Slab', serif; monospace;
+
+  font-size: 20px;
+  padding-left: 70px;
+  letter-spacing: 2px;
+}
+
+.aboutme {
+  color: #3C3C3C;
+  font-family: 'Cinzel Decorative', cursive; monospace;
+  padding-left: 70px;
+}
